@@ -167,12 +167,14 @@ a:hover{
     font-size: 13px;
 }
 
-.announcements{
+.announcements,
+.trendings{
     display: flex;
     flex-direction: column;
 }
 
-.announcements .container{
+.announcements .container,
+.trendings .container{
     background-color: white;
     border-radius: 5px;
     margin-top: 20px;
@@ -184,6 +186,23 @@ a:hover{
     font-size: 10px;
 }
 
-.trendings{
-    border: 1px solid black;
+.trendings p{
+    font-size: 10px;
+}
+
+.trendings .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trendings .container > div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.trendings img{
+    width: 30px;
+    height: 30px;
 }
